@@ -1,0 +1,264 @@
+Operatorzy w programowaniu to symbole lub słowa kluczowe, które wykonują operacje na zmiennych i wartościach. [...]
+
+Następnie wyjaśnij, jakie operacje możesz wykonać za pomocą następujących operatorów:
+
++ dodanie
+
+[!NOTATKA]
+
+Python automatycznie konwertuje wynik na typ float, gdy jest zmienna zmiennoprzecinkowa.
+
+Dla liczby: dostarczanie dodawania arytmetycznego
+
+Dla typu str: dołączone teksty
+
+Można go używać do łączenia list elementów w jednym nowym składzie (podobnie dla typu tuple)
+
+[!OSTROŻNOŚĆ]
+
+Działa tylko na niezawodnych typach danych
+
+* wielość
+
+[!NOTATKA]
+
+Dla liczby: początek mnożenia arytmetycznego, zwracając wynik jako źródło tego samego typu
+
+Można go używać do ponownego użycia urządzenia strrazy
+
+Można go używać do powielania list elemetów oraz typutuple
+
+[!OSTROŻNOŚĆ]
+
+Działa tylko na niezawodnych typach danych
+
+** potęgowanie
+
+[!NOTATKA]
+
+Dla liczby: pierwsza liczba jest podnoszona do potęgi o wartości drugiej liczby, zwracając wynik odpowiedniego typu
+
+Można zastosować (potęgowanie do potęgi)
+
+Przy dodatkowym zastosowaniu, należy uwzględnić podstawowe o nawiasie:
+
+(-2) ** 2  # Wynik: 4, bo (-2) * (-2) = 4 -2 ** 2    # Wynik: -4, bo -(2 ** 2) = -4
+
+[!OSTROŻNOŚĆ]
+
+Podniesienie 0 do potęgi 0 jest matematycznie nieokreślone, jednak python zwraca wartość 1
+
+print(0**0) #Output: 1
+
+/ RYCY
+
+[!NOTATKA]
+
+skok typu zawsze zwracanego typufloat
+
+Dzielenie przez zero powoduje błądZeroDivisionError
+
+// podział podziału (podział piętra)
+
+[!NOTATKA]
+
+Zwracaj zawsze typu wynik int, zaokrąglając do liczby ujemnej w dół (w kierunku minus niekończoności)
+
+Jest to odmienna funkcja działania round(), która działa zaokrąglając matematyczne
+
+Przykład:
+
+print(7 / 2)         # Output: 3.5 (zwykłe dzielenie)
+print(7 // 2)        # Output: 3 (dzielenie całkowite)
+print(round(7 / 2))  # Output: 4 (zaokrąglanie matematyczne)
+
+print(-7 / 2)         # Output: -3.5 (zwykłe dzielenie)
+print(-7 // 2)        # Output: -4 (dzielenie całkowite)
+print(round(-7 / 2))  # Output: -4 (zaokrąglanie matematyczne)
+% modulo (reszta z dzielenia)
+
+[!NOTATKA]
+
+Dla liczby dodatkowych % pozostałych po podzieleniu przez drugą liczbę.
+
+Dla negatywnego wyniku jest wyłącznik z zasadą, że znak jest taki sam jak znak dzielnika.
+
+Przykład:
+
+print(7 % 3)     # Output: 1, ponieważ 7 = 3 * 2 + 1
+print(10 % 2)    # Output: 0, ponieważ 10 dzieli się bez reszty przez 2
+
+print(-7 % 3)    # Output: 2, ponieważ -7 = 3 * (-3) + 2
+print(7 % -3)    # Output: -2, ponieważ 7 = (-3) * (-3) - 2
+[!WSKAZÓWKA]
+
+Operator % jest licznikiem sprawdzania podzielności (np. x % 2 == 0sprawdzanie, czy liczba x jest parzysta)
+
+> większe (< mniejsze)
+
+[!NOTATKA]
+
+Porównuje dwie wartości i zwracane True, jeśli lewa wartość jest większa niż prawo, oraz False, jeśli tak nie jest.
+
+Dla typu czytnikastr alfabetycznego
+
+print("b" > "a")
+# Output: True, ponieważ "b" jest po "a" w kolejności alfabetycznej
+print("apple" > "banana")
+# Output: False, ponieważ "apple" jest przed "banana"
+[!OSTROŻNOŚĆ]
+
+Operator > nie działa bezpośrednio na wszystkich typach złożonych.
+
+Próba porównania np. lista lub słowników bez dodatkowego wykorzystania danych.
+
+<= (mniejsze lub równe (>= większe lub równe)
+
+[!NOTATKA]
+
+Take samo jak dla siebie lub istoty, ale zwróć wartość Truewartości, która jest równa.
+
+Policz, ile operatorów i argumentów jest zawartych w każdym wyrażeniu. Następnie oblicz wartości wyrażeń. Najpierw spróbuj obliczyć każde wyrażenie bez użycia komputera lub kalkulatora. Następnie sprawdź wyniki w trybie interaktywnym.
+
+3 * 2 + 1 (wartość: 7; 2 ops)
+5 + 10 * 5 (wartość: 55; 2 operacje)
+4 + 4 / 2 ** 2 (wartość: 5,0; 3 operacje)
+4 % 3 % 2 % 1 (wartość: 0; 3 ops)
+1 + 2 % 3 ** 4 * 5 (wartość: 11; 4 ops)
+Prawda != Fałsz (wartość: prawda; 1 op)
+Typ danych [...]
+
+Rozważ, jaki typ danych reprezentują poniższe wartości. Następnie sprawdź swoje odpowiedzi (uruchom Python w trybie interaktywnym). Użyj funkcji type(value).
+
+50 int
+149,17float
+4 * 7int
+4.0 * 7float
+„Uniwersytet Ekonomiczny w Krakowie”str
+PRAWDAbool
+2 > 5bool
+3. Zmienne
+W programowaniu zmienna to [...]
+
+Poniżej znajduje się krótki program, który używa zmiennych. Przeanalizuj kod programu i policz, ile zmiennych jest używanych w programie. Następnie dla każdej zmiennej podaj jej nazwę, wartość i typ wartości.
+
+company = "ABC Data"
+phone = "555-123-009"
+employees = 25
+remote_work = True
+big_company = employees > 100
+income = 4500000
+income_per_person = income / employees
+Udany
+
+Można zastosować tę prostą funkcję Pythona i otrzymać odpowiedź:
+
+Nazwy alternatywne są chyba oczywiste.
+
+Zmienna musi być ciągiem znaków bez spacji, skąd pochodzi znak towarowy _
+
+company = "ABC Data"
+phone = "555-123-009"
+employees = 25
+remote_work = True
+big_company = employees > 100
+income = 4500000
+income_per_person = income / employees
+
+print('company value is:',company, ' and type is:',type(company))
+print('phone value is:',phone, ' and type is:',type(phone))
+print('employees value is:',employees, ' and type is:',type(employees))
+print('remote_work value is:',remote_work, ' and type is:',type(remote_work))
+print('big_company value is:',big_company, ' and type is:',type(big_company))
+print('income value is:',income, ' and type is:',type(income))
+print('income_per_person value is:',income_per_person, ' and type is:',type(income_per_person))
+Wyjście:
+
+company value is: ABC Data  and type is: <class 'str'>
+phone value is: 555-123-009  and type is: <class 'str'>
+employees value is: 25  and type is: <class 'int'>
+remote_work value is: True  and type is: <class 'bool'>
+big_company value is: False  and type is: <class 'bool'>
+income value is: 4500000  and type is: <class 'int'>
+income_per_person value is: 180000.0  and type is: <class 'float'>
+Do:
+
+Nazwa	Wartość	Typ
+firma	Dane ABC	str
+telefon	555-123-009	str
+pracownicy	25	wewnątrz
+praca_zdalna	PRAWDA	bajka
+duża_firma	FAŁSZ	bajka
+dochód	4500000	wewnątrz
+dochód_na_osobę	180000,0	platforma
+Poniżej znajduje się program, który oblicza sumę dwóch liczb. Zmodyfikuj program, aby obliczyć sumę trzech liczb. Zwróć uwagę na użycie funkcji print(value1,value2,...), która umożliwia wydrukowanie wartości na ekranie monitora.
+
+Przed:
+
+###
+# A program that calculates the sum of two numbers.
+# Modify the program to calculate the sum of three numbers.
+#
+number1 = 71
+number2 = 14
+result = number1 + number2
+print('Number 1: ', number1)
+print('Number 2: ', number2)
+print('The result of summation: ', result)
+Po:
+
+###
+# A program that calculates the sum of two numbers.
+# Modify the program to calculate the sum of three numbers.
+#
+number1 = 71
+number2 = 14
+number3 = -12
+result = number1 + number2 + number3
+print('Number 1: ', number1)
+print('Number 2: ', number2)
+print('Number 3: ', number3)
+print('The result of summation: ', result)
+Wyjście:
+
+Number 1:  71
+Number 2:  14
+Number 3:  -12
+The result of summation:  73
+Dwie zmienne x i y mają wartości 7 i 34. Napisz program, który zamienia wartości zmiennych (x powinno wynosić 34, a y powinno wynosić 7). Użyj dodatkowej, pomocniczej zmiennej.
+
+Przed:
+
+###
+# A program for swapping two varable values
+#
+x = 7
+y = 34
+z = 0 # additional, auxiliary variable
+print("Before swapping: x=", x, "y=", y)
+
+# swap the values
+...
+...
+
+print("After swapping: x=", x, "y=", y)
+Po:
+
+###
+# A program for swapping two varable values
+#
+x = 7
+y = 34
+z = 0 # additional, auxiliary variable
+print("Before swapping: x=", x, "y=", y)
+
+# swap the values
+z = x
+x = y
+y = z
+
+print("After swapping: x=", x, "y=", y)
+Wyjście:
+
+Before swapping: x= 7 y= 34
+After swapping: x= 34 y= 7
